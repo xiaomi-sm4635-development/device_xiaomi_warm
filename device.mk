@@ -112,6 +112,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     IPACM_Filter_cfg.xml
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.memtrack-service
+
 # Network
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
