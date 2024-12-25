@@ -234,6 +234,9 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayWarm \
     WifiOverlayWarm
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
