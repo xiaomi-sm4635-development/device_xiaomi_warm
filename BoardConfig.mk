@@ -197,7 +197,7 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
 
 # VINTF
 DEVICE_MANIFEST_SKUS := pitti
-DEVICE_MANIFEST_PITTI_FILES := \
+DEVICE_MANIFEST_PITTI_FILES += \
     $(DEVICE_PATH)/vintf/manifest_pitti.xml
 
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
