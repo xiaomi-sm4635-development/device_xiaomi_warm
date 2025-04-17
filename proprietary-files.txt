@@ -67,71 +67,38 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Audio configs
-odm/etc/audio_policy_engine_configuration_mi.xml
-odm/etc/audio_policy_engine_default_stream_volumes.xml
-odm/etc/audio_policy_engine_product_strategies.xml
-odm/etc/audio_policy_engine_stream_volumes.xml
-vendor/etc/audio/sku_pitti/audio_effects.conf
 vendor/etc/audio/sku_pitti/mixer_paths_pitti_idp.xml
 vendor/etc/audio/sku_pitti/mixer_paths_pitti_qrd.xml
 vendor/etc/audio/sku_pitti/resourcemanager_pitti_idp.xml
 vendor/etc/audio/sku_pitti/resourcemanager_pitti_qrd.xml
-vendor/etc/audio/sku_pitti_qssi/audio_policy_configuration.xml
-vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/audio_diag.cfg
-vendor/etc/audio_policy_configuration.xml
-vendor/etc/audio_policy_engine_configuration_mi.xml
-vendor/etc/audio_policy_engine_default_stream_volumes.xml
-vendor/etc/audio_policy_engine_product_strategies.xml
-vendor/etc/audio_policy_engine_stream_volumes.xml
-vendor/etc/bluetooth_qti_audio_policy_configuration.xml
-vendor/etc/card-defs.xml
 vendor/etc/kvh2xml.xml
-vendor/etc/microphone_characteristics.xml
-vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/usecaseKvManager.xml
 
 # Audio firmware
 vendor/firmware/sipa.bin
-
-# Audio graph manager
-vendor/lib64/libagm.so
-vendor/lib64/libagmmixer.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio libraries
 vendor/etc/models/acd/environment.eai
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.pitti.so
 vendor/lib64/libVoiceSdk.so
 vendor/lib64/libadm.so
 vendor/lib64/libadsprpc.so
-vendor/lib64/libar-acdb.so
-vendor/lib64/libar-gpr.so
-vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so
-vendor/lib64/libarmemlog.so
-vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudiofeaturestats.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2udk7vendor.so
 vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libcustomva_intf.so
-vendor/lib64/libhotword_intf.so
+vendor/lib64/libeai_fixed.so
+vendor/lib64/libeai_float.so
 vendor/lib64/libkaraokepal.so
-vendor/lib64/liblx-ar_util.so
-vendor/lib64/liblx-osal.so
+vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/libmcs.so
 vendor/lib64/libpal_net_if.so
-vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libtensorflowlite_c.so:vendor/lib64/libtensorflowlite_c_vendor.so;FIX_SONAME
-vendor/lib64/libvui_intf.so
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Audio soundfx
@@ -1310,14 +1277,6 @@ vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permissions/android.hardware.hardware_keystore.km100.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
 vendor/lib64/libqtikeymint.so
-
-# Listen
-vendor/lib64/hw/sound_trigger.primary.pitti.so
-vendor/lib64/libeai_fixed.so
-vendor/lib64/libeai_float.so
-vendor/lib64/liblistensoundmodel2vendor.so
-vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 
 # Media
 system_ext/lib64/libmmosal.so

@@ -52,8 +52,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    audio.primary.pitti \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    sound_trigger.primary.pitti
 
 PRODUCT_PACKAGES += \
     audioadsprpcd
@@ -68,8 +70,10 @@ PRODUCT_PACKAGES += \
     libagmclient \
     libaudiochargerlistener \
     libbatterylistener \
+    libcustomva_intf \
     libfmpal \
     libhfp_pal \
+    libhotword_intf \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -84,6 +88,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pitti/audio_policy_configuration.xml
+
+PRODUCT_COPY_FILES += \
+    hardware/qcom-caf/sm8650/audio/pal/configs/pitti/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
+    hardware/qcom-caf/sm8650/audio/primary-hal/configs/pitti/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
