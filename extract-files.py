@@ -45,11 +45,6 @@ lib_fixups: lib_fixups_user_type = {
 
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/lib64/libwfdservice.so': blob_fixup()
-        .replace_needed(
-            'android.media.audio.common.types-V2-cpp.so',
-            'android.media.audio.common.types-V4-cpp.so',
-        ),
     'system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml': blob_fixup()
         .regex_replace(r'(?s)^.*?(?=<manifest)', ''),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
