@@ -193,18 +193,6 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
                              samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO AUDIO_CHANNEL_IN_FRONT_BACK"/>
                 </mixPort>
-                <mixPort name="compress-input" role="sink"
-                         flags="AUDIO_INPUT_FLAG_DIRECT" >
-                    <profile name="compress-capture-AAC-LC" format="AUDIO_FORMAT_AAC_LC"
-                             samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000"
-                             channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO AUDIO_CHANNEL_IN_FRONT_BACK"/>
-                    <profile name="compress-capture-AAC-HE-V1" format="AUDIO_FORMAT_AAC_ADTS_HE_V1"
-                             samplingRates="24000 32000 44100 48000"
-                             channelMasks="AUDIO_CHANNEL_IN_MONO AUDIO_CHANNEL_IN_STEREO AUDIO_CHANNEL_IN_FRONT_BACK"/>
-                    <profile name="compress-capture-AAC-HE-V2" format="AUDIO_FORMAT_AAC_ADTS_HE_V2"
-                             samplingRates="24000 32000 44100 48000"
-                             channelMasks="AUDIO_CHANNEL_IN_STEREO"/>
-                </mixPort>
                 <mixPort name="fast input" role="sink"
                          flags="AUDIO_INPUT_FLAG_FAST">
                      <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
@@ -460,8 +448,6 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
                        sources="Telephony Rx"/>
                 <route type="mix" sink="primary input"
                        sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,BT SCO Headset Mic,FM Tuner,Telephony Rx,A2DP In,Echo Reference,BLE In,Proxy In,IP In"/>
-                <route type="mix" sink="compress-input"
-                       sources="Built-In Mic,Built-In Back Mic,BT SCO Headset Mic,Wired Headset Mic,USB Device In,USB Headset In,BLE In,Proxy In,IP In"/>
                 <route type="mix" sink="usb_surround_sound"
                        sources="USB Device In,USB Headset In"/>
                 <route type="mix" sink="fast input"
