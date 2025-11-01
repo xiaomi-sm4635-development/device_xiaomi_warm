@@ -198,12 +198,12 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
 # VINTF
 DEVICE_MANIFEST_SKUS := pitti
 DEVICE_MANIFEST_PITTI_FILES := \
-    $(DEVICE_PATH)/configs/vintf/manifest_pitti.xml
+    $(DEVICE_PATH)/vintf/manifest_pitti.xml
 
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml \
+    $(DEVICE_PATH)/vintf/compatibility_matrix.device.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 
 # WiFi
