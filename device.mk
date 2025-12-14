@@ -233,6 +233,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayWarm \
     FrameworkResOverlayWarm \
     SettingsOverlayWarm \
+    Launcher3OverlayWarm \
     SystemUIOverlayWarm \
     TelephonyOverlayWarm \
     WifiOverlayWarm
