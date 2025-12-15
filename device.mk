@@ -234,6 +234,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayWarm \
     SettingsOverlayWarm \
     Launcher3OverlayWarm \
+    LineageSettingsProviderOverlayWarm \
     SystemUIOverlayWarm \
     TelephonyOverlayWarm \
     WifiOverlayWarm
