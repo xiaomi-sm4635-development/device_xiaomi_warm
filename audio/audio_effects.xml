@@ -77,6 +77,7 @@
         <library name="quasar" path="libquasar.so"/>
         <!--DOLBY DAP-->
         <library name="dap" path="libswdap.so"/>
+        <library name="dap" path="libhwdap.so"/>
         <library name="dvl" path="libdlbvol.so"/>
         <!--DOLBY END-->
         <!--DOLBY GAME-->
