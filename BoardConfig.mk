@@ -67,7 +67,6 @@ BOARD_BOOTCONFIG := \
     androidboot.memcg=1 \
     androidboot.usbcontroller=4e00000.dwc3 \
     androidboot.usb.dwc3_msm=4e00000.ssusb \
-    androidboot.hypervisor.protected_vm.supported=true \
     androidboot.load_modules_parallel=true
 
 BOARD_BOOTCONFIG += \
