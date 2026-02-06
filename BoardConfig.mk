@@ -5,6 +5,8 @@
 
 DEVICE_PATH := device/xiaomi/warm
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # A/B
 AB_OTA_PARTITIONS := \
     boot \
@@ -33,8 +35,40 @@ TARGET_CPU_VARIANT_RUNTIME := kryo300
 TARGET_BOOTLOADER_BOARD_NAME := warm
 TARGET_NO_BOOTLOADER := true
 
+# Boot Image
+BOARD_RAMDISK_USE_LZ4 := true
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
+BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+
+# Device Trees
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+TARGET_NEEDS_DTBOIMAGE := true
+
 # Display
 TARGET_SCREEN_DENSITY := 320
+
+# Kernel
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_IMAGE_NAME := Image
+
+BOARD_KERNEL_CMDLINE := \
+    video=vfb:640x400,bpp=32,memsize=3072000 \
+    swinfo.fingerprint=$(LINEAGE_VERSION) \
+    mtdoops.fingerprint=$(LINEAGE_VERSION)
+
+BOARD_BOOTCONFIG := \
+    androidboot.hardware=qcom \
+    androidboot.memcg=1 \
+    androidboot.usbcontroller=4e00000.dwc3 \
+    androidboot.usb.dwc3_msm=4e00000.ssusb \
+    androidboot.hypervisor.protected_vm.supported=true \
+    androidboot.load_modules_parallel=true
+
+BOARD_BOOTCONFIG += \
+    androidboot.selinux=permissive
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -74,6 +108,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := pitti
+
+# Recovery
+BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 
 # Vendor
 include vendor/xiaomi/warm/BoardConfigVendor.mk
