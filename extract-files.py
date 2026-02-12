@@ -106,6 +106,10 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    'vendor/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql': blob_fixup()
+        .regex_replace(r'\bCOMMIT\s+TRANSACTION\s*;\s*',''),
+    'vendor/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql': blob_fixup()
+        .regex_replace(r'\bINSERT\s+INTO\b', r'INSERT OR IGNORE INTO'),
 }  # fmt: skip
 
 
