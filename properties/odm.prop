@@ -1,0 +1,14 @@
+# Audio
+ro.vendor.audio.camera.loopback.support=false
+ro.vendor.audio.identify_devicelevel=0
+ro.vendor.audio.karaoke.enable=true
+vendor.audio.timecheck_timeoutMs=6000
+
+# Display
+vendor.display.force_tonemapping=1
+
+# Qti
+ro.vendor.qti.va_odm.support=1
+
+# Radio
+persist.vendor.radio.dynamic_sar=1
