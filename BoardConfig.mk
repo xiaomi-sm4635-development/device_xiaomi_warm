@@ -222,3 +222,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
 include vendor/xiaomi/warm/BoardConfigVendor.mk
+
+# Firmware
+include vendor/xiaomi/warm-firmware/config.mk
