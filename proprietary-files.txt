@@ -1133,19 +1133,20 @@ vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json
 
-# Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint-service.odm
-vendor/bin/hw/vendor.silead.hardware.fingerprintext-service
-vendor/etc/init/fingerprint-odm.rc
-vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc
-vendor/etc/vintf/manifest/fingerprint-odm.xml
+# Fingerprint (Goodix)
 vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/hw/fingerprint.silead.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixfingerprint.so
-vendor/lib64/libmifpext.so
+
+# Fingerprint (silead)
+vendor/bin/hw/vendor.silead.hardware.fingerprintext-service
+vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc
+vendor/lib64/hw/fingerprint.silead.default.so
 vendor/lib64/libsl_fp_impl.so
+
+# Fingerprint ext
+vendor/lib64/libmifpext.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so

@@ -100,4 +100,24 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::IImsFactory/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <version>3</version>
+        <fqname>IFingerprint/virtual</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <version>1</version>
+        <interface>
+            <name>IXiaomiFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.fx.tunnel</name>
+        <interface>
+            <name>IMiFxTunnel</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
