@@ -233,6 +233,8 @@ vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmfec.so
+vendor/lib64/libmctf_cl_program.bin
+vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmialgo_ai_vision.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
@@ -261,6 +263,7 @@ vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libtflite_fd.so
 vendor/lib64/libthreadutils.so
+vendor/lib64/vendor.xiaomi.hardware.seccam-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera configs
