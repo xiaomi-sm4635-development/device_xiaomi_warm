@@ -1,0 +1,1 @@
+allow vendor_sensors proc_tp_virtual_proximity:file { getattr open read write };
