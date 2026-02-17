@@ -81,9 +81,6 @@ BOARD_BOOTCONFIG := \
     androidboot.usb.dwc3_msm=4e00000.ssusb \
     androidboot.load_modules_parallel=true
 
-BOARD_BOOTCONFIG += \
-    androidboot.selinux=permissive
-
 # Kernel (prebuilt)
 PREBUILT_PATH := device/xiaomi/warm-kernel
 TARGET_NO_KERNEL_OVERRIDE := true
