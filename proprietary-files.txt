@@ -1105,17 +1105,6 @@ vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixfingerprint.so
-
-# Fingerprint (silead)
-vendor/bin/hw/vendor.silead.hardware.fingerprintext-service
-vendor/etc/init/vendor.silead.hardware.fingerprintext-service.rc
-vendor/lib64/hw/fingerprint.silead.default.so
-vendor/lib64/libsl_fp_impl.so
-
-# Fingerprint ext
-vendor/lib64/libmifpext.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
 
 # GNSS
