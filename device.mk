@@ -16,6 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Add common definitions for Qualcomm
+$(call soong_config_set,rfs,mpss_firmware_symlink_target)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # A/B
