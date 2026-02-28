@@ -5,9 +5,11 @@
 
 DEVICE_PATH := device/xiaomi/warm
 
+BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
+AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
     boot \
     dtbo \
@@ -71,14 +73,17 @@ BOARD_KERNEL_IMAGE_NAME := Image
 
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
+    disable_dma32=on \
     swinfo.fingerprint=$(LINEAGE_VERSION) \
     mtdoops.fingerprint=$(LINEAGE_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
+    androidboot.hypervisor.protected_vm.supported=0 \
     androidboot.memcg=1 \
     androidboot.usbcontroller=4e00000.dwc3 \
     androidboot.usb.dwc3_msm=4e00000.ssusb \
+    androidboot.vendor.qspa=true \
     androidboot.load_modules_parallel=true
 
 # Kernel (prebuilt)
