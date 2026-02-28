@@ -21,8 +21,8 @@ PRODUCT_MODEL := 24116RNC1I
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="warm_global-user 15 AQ3A.241213.002 OS2.0.203.0.VGVINXM release-keys" \
-    BuildFingerprint=Redmi/warm_global/warm:15/AQ3A.241213.002/OS2.0.203.0.VGVINXM:user/release-keys \
+    BuildDesc="warm_global-user 16 BP2A.250605.031.A3 OS3.0.3.0.WGVINXM release-keys" \
+    BuildFingerprint=Redmi/warm_global/warm:16/BP2A.250605.031.A3/OS3.0.3.0.WGVINXM:user/release-keys \
     DeviceName=warm_global \
     DeviceProduct=warm
 

@@ -7,3 +7,9 @@ vendor.xiaomi.hardware.fx.tunnel.IMiFxTunnel/default u:object_r:vendor_hal_finge
 
 # Mlipay
 vendor.xiaomi.hardware.mlipay.IMlipayService/default        u:object_r:hal_mlipay_service:s0
+
+# Camera
+vendor.xiaomi.hardware.quickcamera.IQuickCameraService/default u:object_r:hal_quickcamera_service:s0
+
+# CIT
+vendor.xiaomi.sensor.citsensorservice.ICitSensorService/default   u:object_r:vendor_hal_citsensorservice_xiaomi_service:s0

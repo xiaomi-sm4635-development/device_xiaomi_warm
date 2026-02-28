@@ -1,4 +1,4 @@
-# Unpinned blobs from warm-user 15 AQ3A.241213.002 OS2.0.203.0.VGVINXM release-keys
+# Unpinned blobs from warm-user 16 BP2A.250605.031.A3 OS3.0.3.0.WGVINXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
@@ -234,6 +234,8 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera configs
 odm/etc/camera/cameraopt.json
+odm/etc/camera/cameraopt_perf.json
+odm/etc/camera/cameraopt_reclaim.json
 vendor/etc/camera/model/preview/back/sg_pre_model
 vendor/etc/camera/model/preview/front/model_m/sg_pre_model
 vendor/etc/camera/model/snapshot/back/capture_cache
@@ -487,6 +489,13 @@ vendor/etc/camera/156_ColdWhite.png
 vendor/etc/camera/157_Native.png
 vendor/etc/camera/158_BWClassical.png
 vendor/etc/camera/159_Flowers.png
+vendor/etc/camera/160_Vivid_1.png
+vendor/etc/camera/161_Monsoon.png
+vendor/etc/camera/162_Nature.png
+vendor/etc/camera/163_Relaxation.png
+vendor/etc/camera/164_Kyoto.png
+vendor/etc/camera/165_Oldalley.png
+vendor/etc/camera/166_Reverse.png
 vendor/etc/camera/anc_night_algo_cache
 vendor/etc/camera/anc_night_binary_cache
 vendor/etc/camera/anc_night_model
@@ -630,6 +639,14 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
+
+# CIT Sensor
+odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl;DISABLE_DEPS
+odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
+odm/etc/scene_temp.xml
+odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
+vendor/etc/permissions/com.xiaomi.sensor.xml
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
 
 # Charger
 vendor/etc/charger_fw_fstab.qti
@@ -811,7 +828,7 @@ vendor/lib64/libhdr_stub.so
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
-system_ext/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
+system_ext/lib64/vendor.xiaomi.hardware.display.mihwcextension-V2-ndk.so
 vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_DEPS
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
@@ -1449,7 +1466,6 @@ vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
 
 # QESDK
-system_ext/app/QesdkSysService/QesdkSysService.apk
 system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml
 system_ext/lib64/libqesdk_ndk_platform.qti.so
 system_ext/lib64/vendor.qti.qesdhalaidl-V2-ndk.so
@@ -1523,7 +1539,6 @@ product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
 system/etc/sysconfig/qti_whitelist.xml
 system_ext/app/AtFwd2/AtFwd2.apk
-system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
@@ -1553,6 +1568,7 @@ system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/QtiTelephony/QtiTelephony.apk;REQUIRED=QtiTelephonyCompat
@@ -2065,3 +2081,6 @@ vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# Xiaomi
+odm/lib64/vendor.xiaomi.hardware.misauth-V1-ndk_platform.so

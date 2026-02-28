@@ -1,3 +1,12 @@
+# Camera
+attribute hal_camera_mivi;
+attribute hal_camera_mivi_client;
+attribute hal_camera_mivi_server;
+
+attribute hal_quickcamera;
+attribute hal_quickcamera_client;
+attribute hal_quickcamera_server;
+
 # Displatfeature
 attribute vendor_hal_displayfeature_xiaomi;
 attribute vendor_hal_displayfeature_xiaomi_client;

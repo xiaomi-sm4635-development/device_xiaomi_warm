@@ -32,8 +32,10 @@ ro.vendor.audio.feature.customizedsound=true
 ro.vendor.audio.feature.fade=true
 ro.vendor.audio.fweffect=true
 ro.vendor.audio.playbackcapture.screen=true
+ro.vendor.audio.enable.cid=true
 ro.vendor.audio.scenario.support=true
 ro.vendor.audio.sdk.fluencetype=none
+ro.vendor.audio.activity.monitor=true
 ro.vendor.audio.sdk.ssr=false
 ro.vendor.audio.sos=true
 ro.vendor.audio.spk.stereo=false
@@ -232,6 +234,7 @@ vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.enable_logs=0
+ro.surface_flinger.game_default_frame_rate_override=120
 
 # DPM
 persist.vendor.dpm.vndr.feature=11
@@ -241,6 +244,7 @@ persist.vendor.dpm.vndr.halservice.enable=1
 drm.service.enabled=true
 
 # Fingerprint
+ro.hardware.fp.mievent=true
 persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_location=1080|1000|110|local:4630947039571902850,1080|1000|110|local:4630947039571902851
 
@@ -278,11 +282,15 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 
 # Sensors
+persist.vendor.sensor.mischeck=true
 persist.vendor.sensors.enable.mag_filter=true
 persist.vendor.sensors.support_direct_channel=false
 
 # SOC
 ro.soc.manufacturer=QTI
+
+# Thermal
+persist.vendor.tracking.dfs=true
 
 # USB
 vendor.usb.controller=4e00000.dwc3

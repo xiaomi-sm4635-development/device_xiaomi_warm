@@ -5,6 +5,9 @@
 /dev/socket/audio_us_socket_1 u:object_r:audio_socket:s0
 /dev/xlog u:object_r:sound_device:s0
 
+# CIT Sensors
+/(odm|vendor/odm|vendor|system/vendor)/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
 /persist/camera(/.*)? u:object_r:camera_persist_file:s0
