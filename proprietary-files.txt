@@ -1352,8 +1352,6 @@ vendor/etc/media_codecs_google_video.xml
 vendor/etc/media_codecs_google_video_le.xml
 vendor/etc/media_codecs_performance_pitti.xml
 vendor/etc/media_codecs_performance_pitti_32go.xml
-vendor/etc/media_codecs_pitti.xml
-vendor/etc/media_codecs_pitti_32go.xml
 vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
